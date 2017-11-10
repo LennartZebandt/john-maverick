@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 50679408012782192}
   - component: {fileID: 114847035469659814}
   - component: {fileID: 82961992526499550}
+  - component: {fileID: 114556881725949736}
   m_Layer: 0
   m_Name: HelicopterRight
   m_TagString: Enemy
@@ -187,6 +188,21 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114556881725949736
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1602592888819372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f2ded4d9e39bac4896988cf6c2d9b9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 1569648715570978, guid: 6088548f21c87e44b95f1922af020cd4, type: 2}
+  minCount: 2
+  maxCount: 4
+  maxSpawnRadius: 0
 --- !u!114 &114847035469659814
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -198,7 +214,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c02e05359c5fa0540b8334943a48935d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosion: {fileID: 1569648715570978, guid: 6088548f21c87e44b95f1922af020cd4, type: 2}
   points: 3
   minVSpeed: -0.5
   maxVSpeed: -1

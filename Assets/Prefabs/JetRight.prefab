@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 50008245665295478}
   - component: {fileID: 114881838863697352}
   - component: {fileID: 82051551678375442}
+  - component: {fileID: 114085009432294642}
   m_Layer: 0
   m_Name: JetRight
   m_TagString: Enemy
@@ -187,6 +188,21 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114085009432294642
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1719268141175628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f2ded4d9e39bac4896988cf6c2d9b9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 1569648715570978, guid: 6088548f21c87e44b95f1922af020cd4, type: 2}
+  minCount: 2
+  maxCount: 4
+  maxSpawnRadius: 0
 --- !u!114 &114881838863697352
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -198,7 +214,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c02e05359c5fa0540b8334943a48935d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosion: {fileID: 1569648715570978, guid: 6088548f21c87e44b95f1922af020cd4, type: 2}
   points: 5
   minVSpeed: -1
   maxVSpeed: -2

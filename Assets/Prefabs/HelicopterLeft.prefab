@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 50164127080273798}
   - component: {fileID: 114269360534966452}
   - component: {fileID: 82850448940953986}
+  - component: {fileID: 114722858123118574}
   m_Layer: 0
   m_Name: HelicopterLeft
   m_TagString: Enemy
@@ -198,11 +199,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c02e05359c5fa0540b8334943a48935d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosion: {fileID: 1569648715570978, guid: 6088548f21c87e44b95f1922af020cd4, type: 2}
   points: 3
   minVSpeed: 0.5
   maxVSpeed: 1
   hSpeed: 0.5
+--- !u!114 &114722858123118574
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1594418836374472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f2ded4d9e39bac4896988cf6c2d9b9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 1569648715570978, guid: 6088548f21c87e44b95f1922af020cd4, type: 2}
+  minCount: 2
+  maxCount: 4
+  maxSpawnRadius: 0
 --- !u!212 &212486641422527632
 SpriteRenderer:
   m_ObjectHideFlags: 1

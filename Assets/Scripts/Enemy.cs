@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour {
 
-	public GameObject explosion;
 	public int points;
 	public float minVSpeed;
 	public float maxVSpeed;
 	public float hSpeed;
+
 	private float vSpeed;
 
 	void Start () {
@@ -40,7 +40,10 @@ public class Enemy : MonoBehaviour {
 		Camera.main.GetComponent<CamShake> ().StartHeavyShake ();
 		Vector3 explosionSpawnPos = transform.position;
 		explosionSpawnPos.y += vSpeed * Time.deltaTime;
-		Instantiate (explosion, explosionSpawnPos, Quaternion.identity);
+		ExplosionSpawner explosionSpawner = GetComponent<ExplosionSpawner> ();
+		if (explosionSpawner != null) {
+			explosionSpawner.spawn (explosionSpawnPos);
+		}
 		Destroy(gameObject);
 	}
 

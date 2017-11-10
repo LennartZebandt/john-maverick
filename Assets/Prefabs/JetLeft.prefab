@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 50566685896475426}
   - component: {fileID: 114138405936141840}
   - component: {fileID: 82499684495728524}
+  - component: {fileID: 114615834384598568}
   m_Layer: 0
   m_Name: JetLeft
   m_TagString: Enemy
@@ -198,11 +199,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c02e05359c5fa0540b8334943a48935d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosion: {fileID: 1569648715570978, guid: 6088548f21c87e44b95f1922af020cd4, type: 2}
   points: 5
   minVSpeed: 1
   maxVSpeed: 2
   hSpeed: 0.3
+--- !u!114 &114615834384598568
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1816038596982616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f2ded4d9e39bac4896988cf6c2d9b9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 1569648715570978, guid: 6088548f21c87e44b95f1922af020cd4, type: 2}
+  minCount: 2
+  maxCount: 4
+  maxSpawnRadius: 0
 --- !u!212 &212380216813777244
 SpriteRenderer:
   m_ObjectHideFlags: 1
