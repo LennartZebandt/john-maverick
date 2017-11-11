@@ -202,7 +202,7 @@ MonoBehaviour:
   explosion: {fileID: 1569648715570978, guid: 6088548f21c87e44b95f1922af020cd4, type: 2}
   minCount: 2
   maxCount: 4
-  maxSpawnRadius: 0
+  maxSpawnRadius: 0.05
 --- !u!114 &114881838863697352
 MonoBehaviour:
   m_ObjectHideFlags: 1
