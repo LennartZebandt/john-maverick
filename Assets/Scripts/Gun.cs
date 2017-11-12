@@ -10,15 +10,19 @@ public class Gun : MonoBehaviour {
 	private float nextFire = 0.5F;
 	private GameObject newProjectile;
 	private float elapsed = 0.0F;
+	private GameObject muzzle;
 
-	void Update()
-	{
+	void Start(){
+		muzzle = transform.Find ("Muzzle").gameObject;
+	}
+
+	void Update(){
+		muzzle.GetComponent<SpriteRenderer> ().enabled = false;
 		elapsed += Time.deltaTime;
-
-		if (Input.GetButtonDown("Fire1") && elapsed > nextFire)
-		{
+		if (Input.GetButtonDown("Fire1") && elapsed > nextFire){
+			muzzle.GetComponent<SpriteRenderer> ().enabled = true;
 			nextFire = elapsed + fireRate;
-			newProjectile = Instantiate(projectile, transform.Find("FirePoint").position, transform.rotation) as GameObject;
+			newProjectile = Instantiate(projectile, muzzle.transform.position, transform.rotation) as GameObject;
 			nextFire -= elapsed;
 			elapsed = 0.0F;
 		}
