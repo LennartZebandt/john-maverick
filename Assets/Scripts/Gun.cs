@@ -5,7 +5,8 @@ using UnityEngine;
 public class Gun : MonoBehaviour {
 
 	public GameObject projectile;
-	public float fireRate = 0.5F;
+	public float fireRate;
+	public float recoil;
 
 	private float nextFire = 0.5F;
 	private GameObject newProjectile;
@@ -20,6 +21,9 @@ public class Gun : MonoBehaviour {
 		muzzle.GetComponent<SpriteRenderer> ().enabled = false;
 		elapsed += Time.deltaTime;
 		if (Input.GetButtonDown("Fire1") && elapsed > nextFire){
+			Vector3 heroPos = transform.parent.position;
+			heroPos.y += recoil;
+			transform.parent.position = heroPos;
 			muzzle.GetComponent<SpriteRenderer> ().enabled = true;
 			nextFire = elapsed + fireRate;
 			newProjectile = Instantiate(projectile, muzzle.transform.position, transform.rotation) as GameObject;
