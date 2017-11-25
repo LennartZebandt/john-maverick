@@ -903,6 +903,7 @@ MonoBehaviour:
   enemyTypes:
   - {fileID: 1602592888819372, guid: 040c6742ed4882a48aa372dabfe00225, type: 2}
   - {fileID: 1719268141175628, guid: 6ba05265790133d41aac346d74a2d830, type: 2}
+  - {fileID: 1716524964496718, guid: f7c61a67cc2ce9a48b4eb8add5e98e93, type: 2}
 --- !u!4 &1521413758
 Transform:
   m_ObjectHideFlags: 0
@@ -936,6 +937,7 @@ MonoBehaviour:
   enemyTypes:
   - {fileID: 1594418836374472, guid: 6f12e70e867bf74458a817317b251b20, type: 2}
   - {fileID: 1816038596982616, guid: 717c60c3eea93de478f9e80a5ef81831, type: 2}
+  - {fileID: 1716524964496718, guid: f7c61a67cc2ce9a48b4eb8add5e98e93, type: 2}
 --- !u!114 &1521413760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -965,7 +967,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d79d03d99d3cd5e4d9365971669f6af2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hero: {fileID: 1515331812300042, guid: e375fd69ee29ebe4a9a0f597bee8f534, type: 2}
+  hero: {fileID: 1582718379543366, guid: 133b8095f9e29594c86dae1aade09303, type: 2}
 --- !u!1 &1603113032
 GameObject:
   m_ObjectHideFlags: 0

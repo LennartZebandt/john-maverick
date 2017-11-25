@@ -2,25 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour {
+abstract public class Enemy : MonoBehaviour {
 
-	public int points;
-	public float minVSpeed;
-	public float maxVSpeed;
-	public float hSpeed;
-
-	private float vSpeed;
-
-	void Start () {
-		vSpeed = Random.Range (minVSpeed, maxVSpeed);
-	}
-	
-	void Update () {
-		Vector3 position = this.transform.position;
-		position.x += vSpeed * Time.deltaTime;
-		position.y += hSpeed * Time.deltaTime;
-		this.transform.position = position;
-	}
+	protected int points;
+	protected float hSpeed;
+	protected float vSpeed;
 
 	void OnBecameInvisible() {
 		Destroy(gameObject);
@@ -39,7 +25,8 @@ public class Enemy : MonoBehaviour {
 		//create explosion
 		Camera.main.GetComponent<CamShake> ().StartHeavyShake ();
 		Vector3 explosionSpawnPos = transform.position;
-		explosionSpawnPos.y += vSpeed * Time.deltaTime;
+		explosionSpawnPos.y += hSpeed * Time.deltaTime;
+		explosionSpawnPos.x += vSpeed * Time.deltaTime;
 		ExplosionSpawner explosionSpawner = GetComponent<ExplosionSpawner> ();
 		if (explosionSpawner != null) {
 			explosionSpawner.spawn (explosionSpawnPos);
