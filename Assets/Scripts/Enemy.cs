@@ -4,7 +4,7 @@ using UnityEngine;
 
 abstract public class Enemy : MonoBehaviour {
 
-	protected int points;
+	public int points;
 	protected float hSpeed;
 	protected float vSpeed;
 

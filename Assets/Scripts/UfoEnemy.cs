@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class UfoEnemy : Enemy {
 
-	public int points;
 	public float minSpeed;
 	public float maxSpeed;
 
