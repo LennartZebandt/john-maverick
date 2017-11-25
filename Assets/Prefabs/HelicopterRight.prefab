@@ -217,7 +217,6 @@ MonoBehaviour:
   points: 3
   minVSpeed: -0.5
   maxVSpeed: -1
-  hSpeed: 0.5
 --- !u!212 &212409893799852726
 SpriteRenderer:
   m_ObjectHideFlags: 1

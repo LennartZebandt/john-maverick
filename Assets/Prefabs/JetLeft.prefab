@@ -202,7 +202,6 @@ MonoBehaviour:
   points: 5
   minVSpeed: 1
   maxVSpeed: 2
-  hSpeed: 0.3
 --- !u!114 &114615834384598568
 MonoBehaviour:
   m_ObjectHideFlags: 1

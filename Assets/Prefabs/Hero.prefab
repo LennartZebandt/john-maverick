@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 82376944367363748}
   m_Layer: 0
   m_Name: Hero
-  m_TagString: Untagged
+  m_TagString: Hero
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -222,7 +222,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 1712455739114994, guid: 5661ab695c441de48b7c933472895571, type: 2}
   fireRate: 0.2
-  recoil: 0.05
+  recoil: 0.02
 --- !u!114 &114915014018318418
 MonoBehaviour:
   m_ObjectHideFlags: 1
